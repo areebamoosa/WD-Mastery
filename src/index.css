@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+* {
+  background-color: #030013;
+  background-color: #000000;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Customised Font */
+.font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Customised colors */
+.blue {
+  background-color: #33a7ff;
+}
+.black {
+  background-color: #000000;
+}
+.orange{
+  color: #ffbe53;
+}
+.green{
+  color: #6cff7c;
+}
+.light{
+  color: #d9dff3;
+}
+
+/*  */
