@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 * {
-  background-color: #030013;
+  /* background-color: #030013; */
   background-color: #000000;
 
 }
@@ -27,14 +27,18 @@ body {
 .black {
   background-color: #000000;
 }
-.orange{
+.orange {
   color: #ffbe53;
 }
-.green{
+.green {
   color: #6cff7c;
 }
-.light{
+.light {
   color: #d9dff3;
 }
-
-/*  */
+.light-blue {
+  color: #46b3ff;
+}
+.card{
+  background-color: #141730;
+}

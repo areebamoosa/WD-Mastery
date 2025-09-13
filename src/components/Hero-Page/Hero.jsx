@@ -4,8 +4,9 @@ import heroImage from '../../assets/hero-img.jpg';
 const Hero = () => {
   return (
     <>
-      <div className='black min-h-screen mt-100'>
-        <img src={heroImage} alt="heroimage" className='absolute inset-0 m-auto object-contain mt-[220px] w-108 h-auto' />
+      <div className="relative flex items-center justify-center h-screen black ">
+        <img
+          src={heroImage} alt="heroimage" className="max-w-[490px] w-full h-auto object-contain mt-[-180px]"/>
       </div>
     </>
   )
