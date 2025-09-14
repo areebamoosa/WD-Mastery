@@ -3,6 +3,7 @@ import Hero from './components/Hero-Page/Hero'
 import Navbar from './components/NavBar/Navbar'
 import Courses from './components/Courses/Courses'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Review from './components/Reviews/Review'
 
 
 const App = () => {
@@ -50,6 +51,22 @@ const App = () => {
 
 
       </div>
+
+      {/* Reviews Section */}
+
+      {/* Review Header */}
+      <div className='text-white  text-4xl font flex justify-center items-center gap-3 '>
+        <h1 className='font-bold'>What Devs Say About</h1>
+        <h1 className='font-bold light-blue'>WD Mastery</h1>
+      </div>
+
+      {/* Review Card component */}
+
+      <Router>
+        <Routes>
+          <Route path='/' element={<Review />} />
+        </Routes>
+      </Router>
 
     </>
   )
