@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, NavLink, Route } from 'react-router-dom'
 import logo from '../../assets/logo.png';
+import Button from '../Button/Button';
 
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
                     <div className="flex space-x-6 font mt-2 ml-5 mr-5">
                         <NavLink>All courses</NavLink>
                         <NavLink>Learning Path</NavLink>
-                        <NavLink className="blue text-blue-800 border px-3 py-1.5 rounded-md font-medium mt-[-8px]">Login to your account</NavLink>
+                        <NavLink><Button text={"Login to your account"} width="w-40" height="h-8" /></NavLink>
                     </div>
 
                 </div>

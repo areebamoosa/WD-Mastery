@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button/Button'
 
 const PremiumCard = ({ plan, people, members, pricing }) => {
   return (
@@ -16,6 +17,10 @@ const PremiumCard = ({ plan, people, members, pricing }) => {
         <div>
           <p className='card font-medium text-base'>{pricing}</p>
           <p className='card text-xs light'>Billed monthly or annually. Cancel anytime</p>
+        </div>
+
+        <div className='card flex justify-center items-center mt-5'>
+          <Button text="Try it free" width="w-50" height="h-8" />
         </div>
 
       </div>

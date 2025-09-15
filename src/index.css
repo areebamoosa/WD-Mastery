@@ -3,7 +3,6 @@
 * {
   /* background-color: #030013; */
   background-color: #000000;
-
 }
 
 body {
@@ -38,6 +37,9 @@ body {
 .light-blue {
   color: #46b3ff;
 }
-.card{
+.card {
   background-color: #141730;
+}
+.btn {
+  color: #141730;
 }
