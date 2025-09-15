@@ -4,7 +4,7 @@ import Navbar from './components/NavBar/Navbar'
 import Courses from './components/Courses/Courses'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Review from './components/Reviews/Review'
-
+import Premium from './components/Premium/Premium'
 
 const App = () => {
   return (
@@ -65,6 +65,30 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Review />} />
+        </Routes>
+      </Router>
+
+      {/* Premium Section */}
+
+      {/* Premium Header */}
+
+      <div className='text-white'>
+
+        <div className='text-4xl  flex gap-2 justify-center items-center '>
+          <h1 className='font font-bold '>Join the</h1>
+          <h1 className='font font-bold light-blue'>Pro Circle</h1>
+          <h1 className='font font-medium '>-</h1>
+          <h1 className='font font-medium text-3xl'>for you or your organization</h1>
+        </div>
+        <p className='flex justify-center items-center mt-4 text-sm'>Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more</p>
+
+      </div>
+
+      {/* Premium Card Component */}
+
+      <Router>
+        <Routes>
+          <Route path='/' element={<Premium />} />
         </Routes>
       </Router>
 
