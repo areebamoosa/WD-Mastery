@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 * {
-  /* background-color: #030013; */
   background-color: #000000;
 }
 
@@ -11,19 +10,39 @@ body {
   overflow-x: hidden;
 }
 
-/* Customised Font */
+/* Customised Font Styles*/
+
 .font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-/* Customised colors */
+/* Customised Background Colors */
+
 .blue {
   background-color: #33a7ff;
 }
 .black {
   background-color: #000000;
+}
+.card {
+  background-color: #141730;
+}
+.email-card {
+  background-color: #171a34;
+}
+.input {
+  background-color: #2a314d;
+}
+.sub-btn {
+  background-color: #ffce21;
+}
+
+/* Customised text colors */
+
+.blue-text {
+  color: #33a7ff;
 }
 .orange {
   color: #ffbe53;
@@ -37,9 +56,12 @@ body {
 .light-blue {
   color: #46b3ff;
 }
-.card {
-  background-color: #141730;
-}
 .btn {
   color: #141730;
+}
+
+/* Customised Border styles */
+
+.border {
+  border-color: #33a7ff;
 }

@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Review from "./components/Reviews/Review";
 import Premium from "./components/Premium/Premium";
 import Button from "./components/Button/Button";
+import Footer from "./components/Footer/Footer";
+import Credits from "./components/Footer/Credits";
+import EmailCard from "./components/Footer/EmailCard";
 
 const App = () => {
   return (
@@ -101,6 +104,13 @@ const App = () => {
       <div className="flex justify-center items-center mt-[-100px]">
         <Button text="Subscribe to WD Mastery" width="w-100" height="h-10" />
       </div>
+
+      {/* Footer Component */}
+
+      <hr className="blue-text mt-20" />
+      <Footer />
+      <Credits />
+
     </>
   );
 };
