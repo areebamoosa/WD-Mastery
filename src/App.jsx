@@ -9,6 +9,7 @@ import Button from "./components/Button/Button";
 import Footer from "./components/Footer/Footer";
 import Credits from "./components/Footer/Credits";
 import EmailCard from "./components/Footer/EmailCard";
+import Faq from "./components/FAQS/Faq";
 
 const App = () => {
   return (
@@ -105,12 +106,36 @@ const App = () => {
         <Button text="Subscribe to WD Mastery" width="w-100" height="h-10" />
       </div>
 
+      {/* FAQS Section */}
+
+      {/* Faqs Heading */}
+
+      <div className="flex justify-center gap-20 items-center mt-20 ">
+
+        <div className="flex flex-col gap-2 mt-[-270px]">
+          <h1 className="text-4xl text-white font-bold font ">Frequently</h1>
+          <h1 className="text-4xl text-white font-bold font ">Asked Questions</h1>
+          <p className="text-base light font ">Your path to clarity and understanding</p>
+        </div>
+
+        {/* FAQ's Component */}
+        <div>
+          <Faq />
+        </div>
+
+      </div>
+
+
+      <div className="flex gap-6 flex-col justify-center items-center mt-25">
+        <p className="text-base text-white">My questions are answered, and I'm ready to... </p>
+        <Button text="Become a Pro Member Now" width="w-70" height="h-10" />
+      </div>
+
       {/* Footer Component */}
 
-      <hr className="blue-text mt-20" />
+      <hr className="blue-text mt-15" />
       <Footer />
       <Credits />
-
     </>
   );
 };
