@@ -11,6 +11,7 @@ import Credits from "./components/Footer/Credits";
 import EmailCard from "./components/Footer/EmailCard";
 import Faq from "./components/FAQS/Faq";
 import Path from "./components/Learning-Page/Path";
+import Login from "./components/Login-Page/Login";
 
 const App = () => {
   return (
@@ -138,6 +139,7 @@ const App = () => {
           } />
 
           <Route path="/path" element={<Path />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/premium" element={<Premium />} />

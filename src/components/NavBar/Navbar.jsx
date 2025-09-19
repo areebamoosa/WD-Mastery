@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png';
 import Button from '../Button/Button';
 
 
+
 // Importing the pages 
 import Path from '../Learning-Page/Path';
 
@@ -20,7 +21,7 @@ const Navbar = () => {
                     <div className="flex space-x-6 font mt-2 ml-5 mr-5">
                         <NavLink>All courses</NavLink>
                         <NavLink to="/path">Learning Path</NavLink>
-                        <NavLink><Button text={"Login to your account"} width="w-40" height="h-8" /></NavLink>
+                        <NavLink to="/login"><Button text={"Login to your account"} width="w-40" height="h-8"  /></NavLink>
                     </div>
 
                 </div>
