@@ -1,0 +1,48 @@
+import React from "react";
+import Button from "../Button/Button";
+import Github from "../../assets/github.svg";
+import Mail from "../../assets/mail.svg";
+
+
+const Path = () => {
+  return (
+    <>
+      <div className='text-white flex flex-col justify-center items-center mt-10   '>
+
+        <h1 className='text-2xl font font-semibold '>Let's Generate Your Personalized</h1>
+        <h1 className='text-2xl font font-semibold '>Learning Path</h1>
+
+        <div className="flex flex-col items-start w-120">
+          <label htmlFor="name" className="mt-10 light font text-xs text-left mb-2">Full name</label>
+          <input type="text" id="name" placeholder="Your full name" className="font card w-120 p-3 rounded-md text-xs" />
+
+          <label htmlFor="email" className="light font mt-5 text-xs text-left mb-2">Email address</label>
+          <input type="text" id="email" placeholder="Your email address" className="font card w-120 p-3 rounded-md text-xs" />
+        </div>
+
+        <br />
+        <Button text={"Create Your Personalized Learning Path"} width="w-120" height="h-8" />
+      </div>
+
+      <div className='flex mt-10 justify-center items-center'>
+        <hr className='w-58 text-gray-600' />
+        <p className=' mr-2 ml-2 font text-xs light'>or</p>
+        <hr className='text-gray-600 w-58' />
+      </div>
+
+      <div className="text-white flex gap-10 justify-center items-center mt-10">
+        <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md">
+          <img src={Github} alt="git" className="w-5 h-5 card " />
+          <span className="card text-xs">Access with Github</span>
+        </button>
+
+        <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md">
+          <img src={Mail} alt="mail" className="w-5 h-5 card" />
+          <span className="card text-xs">Contact with Mail</span>
+        </button>
+      </div>
+    </>
+  )
+}
+
+export default Path

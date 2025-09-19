@@ -13,7 +13,7 @@ const Credits = () => {
 
         <p className='ml-[-160px]'>©Copyright 2025 WD Mastery Pro</p>
 
-        <p>Designed with <i class="fa-regular fa-heart"></i> by A.M</p>
+        <p>Designed with by A.M</p>
 
         <div className='flex gap-4'>
           <img src={Github} alt="insta" />
