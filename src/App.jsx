@@ -60,24 +60,23 @@ const App = () => {
             {/* Courses Card Component */}
 
             <div className="m-15">
-
-
-
               <Courses />
+            </div>
 
+            <div className="flex justify-center items-center">
+
+              <Button text="View All Courses" width="w-100" height="h-10" />
             </div>
 
             {/* Reviews Section */}
 
             {/* Review Header */}
-            <div className="text-white  text-4xl font flex justify-center items-center gap-3 ">
+            <div className="text-white  text-4xl font flex justify-center items-center gap-3 mt-20 ">
               <h1 className="font-bold">What Devs Say About</h1>
               <h1 className="font-bold light-blue">WD Mastery</h1>
             </div>
 
             {/* Review Card component */}
-
-
             <Review />
 
             {/* Premium Section */}

@@ -2,7 +2,8 @@ import React from 'react'
 
 const ReviewCard = ({ img, name, review }) => {
   return (
-    <div className='text-white p-6 rounded-md shadow-md card w-80 h-40 '>
+
+    <div className="text-white p-6 card rounded-md w-80 h-45 transition-shadow duration-300 hover:shadow-[0_4px_15px_#33a7ff]">
       <div className='flex items-center mb-3 card mt-[-10px]'>
         <img
           src={img}
@@ -17,12 +18,12 @@ const ReviewCard = ({ img, name, review }) => {
 
       <p className='text-xs text-gray-300 card'>{review}</p>
 
-      <div className='flex text-yellow-400 mt-2'>
-        <i className="fa-solid fa-star"></i>
-        <i className="fa-solid fa-star"></i>
-        <i className="fa-solid fa-star"></i>
-        <i className="fa-solid fa-star"></i>
-        <i className="fa-solid fa-star"></i>
+      <div className='flex blue-text mt-2 card '>
+        <i className="fa-solid fa-star card"></i>
+        <i className="fa-solid fa-star card"></i>
+        <i className="fa-solid fa-star card"></i>
+        <i className="fa-solid fa-star card"></i>
+        <i className="fa-solid fa-star card"></i>
       </div>
 
     </div>
