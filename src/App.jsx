@@ -62,7 +62,7 @@ const App = () => {
 
             {/* Customer's job places section */}
 
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center mt-[-50px]">
               <div>
                 <p className="light font">They Started Like You. Now They Work Here</p>
               </div>
