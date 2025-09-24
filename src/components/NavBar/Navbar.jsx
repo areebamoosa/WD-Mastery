@@ -19,7 +19,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex space-x-6 font mt-2 ml-5 mr-5">
-                        <NavLink>All courses</NavLink>
+                        <NavLink to="/courses">All courses</NavLink>
                         <NavLink to="/path">Learning Path</NavLink>
                         <NavLink to="/login"><Button text={"Login to your account"} width="w-40" height="h-8"  /></NavLink>
                     </div>

@@ -1,8 +1,8 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Hero from "./components/Hero-Page/Hero";
 import Navbar from "./components/NavBar/Navbar";
 import Courses from "./components/Courses/Courses";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Review from "./components/Reviews/Review";
 import Premium from "./components/Premium/Premium";
 import Button from "./components/Button/Button";
@@ -25,6 +25,12 @@ import microsoft from './assets/microsoft.svg'
 import nike from './assets/nike.svg'
 import nvidia from './assets/nvidia.svg'
 import shopify from './assets/shopify.svg'
+import js from './assets/js.svg'
+import next from './assets/next.svg'
+import native from './assets/react-native.svg'
+import react from './assets/react.svg'
+import tailwind from './assets/tailwind.svg'
+import threejs from './assets/three-js.svg'
 
 const App = () => {
   return (
@@ -219,9 +225,59 @@ const App = () => {
           </>
           } />
 
+          {/* All Courses Page */}
+
+          <Route path="/courses" element={<>
+
+            {/* Courses Header */}
+
+            <div className="flex flex-col justify-center items-center mt-20">
+              <div className="text-white text-5xl font font-bold  ">
+                <h1>Courses That Take You</h1>
+                <div className="flex gap-3">
+                  <h1>From</h1>
+                  <h1 className="gold">Learning</h1>
+                  <h1>to</h1>
+                  <h1 className="green">Doing</h1>
+                </div>
+              </div>
+              <p className="light mt-5 text-lg">Learn the skills. Build the portfolio. Get the job.</p>
+            </div>
+
+            <div className="flex justify-center items-center mt-8">
+              <img src={js} alt="js" />
+              <img src={next} alt="js" />
+              <img src={react} alt="js" />
+              <img src={tailwind} alt="js" />
+              <img src={threejs} alt="js" />
+              <img src={native} alt="js" />
+            </div>
+
+            <h1 className="text-2xl text-white ml-15 mt-20 ">Courses</h1>
+
+            <Courses />
+
+            <div className="text-3xl font text-white font-semibold flex gap-1 justify-center items-center mt-25">
+              <h3 className="gold">Wait... </h3>
+              <h3>But what if I want to learn</h3>
+              <h3 className="green">EVERYTHING</h3>
+              <h3>?</h3>
+            </div>
+
+            <div className="text-4xl text-white font font-semibold flex gap-2 justify-center items-center mt-15">
+              <h1>Become a </h1>
+              <h1 className="blue-text">Member</h1>
+            </div>
+
+            <Premium />
+            <Footer />
+            <Credits />
+          </>
+          } />
+
+
           <Route path="/path" element={<Path />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/courses" element={<Courses />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/premium" element={<Premium />} />
         </Routes>
