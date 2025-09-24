@@ -71,3 +71,18 @@ body {
 .border {
   border-color: #33a7ff;
 }
+
+/* SVG's Animation Slide */
+
+@keyframes slide {
+  0% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+
+.animate-slide {
+  animation: slide 15s linear infinite;
+}

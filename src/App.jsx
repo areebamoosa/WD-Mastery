@@ -16,6 +16,15 @@ import yt from './assets/youtube.svg'
 import inst from './assets/instagram.svg'
 import linkedin from './assets/linkedinsvg.svg'
 import qoma from './assets/quote.svg'
+import adidas from './assets/adidas.svg'
+import adobe from './assets/adobe.svg'
+import amazon from './assets/amazon.svg'
+import linear from './assets/linear.svg'
+import loom from './assets/loom.svg'
+import microsoft from './assets/microsoft.svg'
+import nike from './assets/nike.svg'
+import nvidia from './assets/nvidia.svg'
+import shopify from './assets/shopify.svg'
 
 const App = () => {
   return (
@@ -27,7 +36,6 @@ const App = () => {
           <Route path="/" element={<>
 
             {/* Hero Page */}
-
 
             {/* Main Hero Section Header */}
 
@@ -48,13 +56,40 @@ const App = () => {
               </div>
             </div>
 
+            {/* Hero section component */}
+
             <Hero />
+
+            {/* Customer's job places section */}
+
+            <div className="flex flex-col justify-center items-center ">
+              <div>
+                <p className="light font">They Started Like You. Now They Work Here</p>
+              </div>
+              <div className="gap-8 mt-8 relative w-[500px] ">
+                <div className="flex gap-8 animate-slide justify-center items-center ">
+                  <img src={microsoft} alt="microsoft" />
+                  <img src={shopify} alt="shopify" />
+                  <img src={amazon} alt="amazon" />
+                  <img src={nike} alt="nike" />
+                  <img src={adidas} alt="adidas" />
+                  <img src={nvidia} alt="nvidia" />
+                  <img src={loom} alt="loom" />
+                  <img src={adobe} alt="adobe" />
+                  <img src={linear} alt="linear" />
+                  <img src={microsoft} alt="microsoft" />
+                  <img src={shopify} alt="shopify" />
+                  <img src={amazon} alt="amazon" />
+                  <img src={nike} alt="nike" />
+                </div >
+              </div>
+            </div>
 
             {/* Courses Section */}
 
             {/* Courses Header */}
 
-            <div className="text-white flex flex-col items-center font gap-4">
+            <div className="text-white flex flex-col items-center font gap-4 mt-30">
               <h1 className="text-4xl font-bold">Stop Watching. Start Building.</h1>
               <p className="light text-base">
                 Full stack courses focused on outcomes, not watch time.
@@ -85,11 +120,11 @@ const App = () => {
 
             {/* Popularity Section */}
 
-            <div className="text-white flex flex-col justify-center items-center font">
+            <div className="text-white flex flex-col justify-center items-center font m-15">
               <h3 className="text-lg light">Developers love our content and we think you will, too.</h3>
               <div className="flex justify-center items-center gap-10 mt-10 ">
-                <div className=" card px-15 py-5  rounded-md ">
-                  <p className="card flex gap-2 justify-center items-center">2,244 reviews on<i className="fa-solid fa-star card blue-text"></i>Trustpilot</p>
+                <div className=" card px-4 py-5 gap-2  rounded-md ">
+                  <p className="card flex gap-2 justify-center items-center ">2,244 reviews on<i className="fa-solid fa-star card blue-text"></i>Trustpilot</p>
                 </div>
                 <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
                   <img src={inst} alt="yt" className="card " />
