@@ -12,6 +12,9 @@ import EmailCard from "./components/Footer/EmailCard";
 import Faq from "./components/FAQS/Faq";
 import Path from "./components/Learning-Page/Path";
 import Login from "./components/Login-Page/Login";
+import yt from './assets/youtube.svg'
+import inst from './assets/instagram.svg'
+import linkedin from './assets/linkedinsvg.svg'
 
 const App = () => {
   return (
@@ -79,11 +82,34 @@ const App = () => {
             {/* Review Card component */}
             <Review />
 
+            {/* Popularity Section */}
+
+            <div className="text-white flex flex-col justify-center items-center">
+              <h3 className="text-lg light">Developers love our content and we think you will, too.</h3>
+              <div className="flex justify-center items-center gap-10 mt-10 ">
+                <div className=" card px-15 py-5  rounded-md ">
+                  <p className="card flex gap-2 justify-center items-center">2,244 reviews on<i className="fa-solid fa-star card blue-text"></i>Trustpilot</p>
+                </div>
+                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
+                  <img src={inst} alt="yt" className="card " />
+                  <p className="card">300K+ followers </p>
+                </div>
+                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
+                  <img src={yt} alt="yt" className="card " />
+                  <p className="card">1.1M subscribers</p>
+                </div>
+                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
+                  <img src={linkedin} alt="yt" className="card" />
+                  <p className="card">200K followers</p>
+                </div>
+              </div>
+            </div>
+
             {/* Premium Section */}
 
             {/* Premium Header */}
 
-            <div className="text-white">
+            <div className="text-white mt-50">
               <div className="text-4xl  flex gap-2 justify-center items-center ">
                 <h1 className="font font-bold ">Join the</h1>
                 <h1 className="font font-bold light-blue">Pro Circle</h1>
