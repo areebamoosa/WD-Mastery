@@ -15,6 +15,7 @@ import Login from "./components/Login-Page/Login";
 import yt from './assets/youtube.svg'
 import inst from './assets/instagram.svg'
 import linkedin from './assets/linkedinsvg.svg'
+import qoma from './assets/quote.svg'
 
 const App = () => {
   return (
@@ -84,7 +85,7 @@ const App = () => {
 
             {/* Popularity Section */}
 
-            <div className="text-white flex flex-col justify-center items-center">
+            <div className="text-white flex flex-col justify-center items-center font">
               <h3 className="text-lg light">Developers love our content and we think you will, too.</h3>
               <div className="flex justify-center items-center gap-10 mt-10 ">
                 <div className=" card px-15 py-5  rounded-md ">
@@ -105,11 +106,31 @@ const App = () => {
               </div>
             </div>
 
+            {/* Quote Section */}
+
+            <div className="flex justify-center items-center mt-20" >
+              <img src={qoma} alt="qoma" className="mb-30 " />
+              <div className="flex flex-col justify-center items-center text-2xl font-bold font email-card rounded-xl w-250 p-8">
+                <div className="light flex gap-1 email-card">
+                  <p className="blue-text email-card">Every developer</p>
+                  <p className="email-card">hits</p>
+                  <p className="gold email-card">roadblocks</p>
+                  <p className="email-card">.The kind that makes you want to</p>
+                </div>
+                <div className="light flex gap-1 email-card">
+                  <p className="email-card">throw your laptop out the window. </p>
+                  <p className="red email-card">You're not alone</p>
+                  <p className="email-card">.</p>
+                </div>
+              </div>
+              <img src={qoma} alt="qoma" style={{ transform: "rotate(180deg)" }} className="mt-30" />
+            </div>
+
             {/* Premium Section */}
 
             {/* Premium Header */}
 
-            <div className="text-white mt-50">
+            <div className="text-white mt-25">
               <div className="text-4xl  flex gap-2 justify-center items-center ">
                 <h1 className="font font-bold ">Join the</h1>
                 <h1 className="font font-bold light-blue">Pro Circle</h1>
