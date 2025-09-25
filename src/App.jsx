@@ -125,21 +125,21 @@ const App = () => {
 
             {/* Popularity Section */}
 
-            <div className="text-white flex flex-col justify-center items-center font m-15">
+            <div className="text-white flex flex-col justify-center items-center font m-15 mt-[-45px]">
               <h3 className="text-lg light">Developers love our content and we think you will, too.</h3>
-              <div className="flex justify-center items-center gap-10 mt-10 ">
-                <div className=" card px-4 py-5 gap-2  rounded-md ">
+              <div className="flex justify-center items-center gap-3 mt-10 ">
+                <div className=" card px-4 py-5 gap-2  rounded-md  transition-transform duration-300 ease-in-out hover:-translate-y-2">
                   <p className="card flex gap-2 justify-center items-center ">2,244 reviews on<i className="fa-solid fa-star card blue-text"></i>Trustpilot</p>
                 </div>
-                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
+                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
                   <img src={inst} alt="yt" className="card " />
                   <p className="card">300K+ followers </p>
                 </div>
-                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
+                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
                   <img src={yt} alt="yt" className="card " />
                   <p className="card">1.1M subscribers</p>
                 </div>
-                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md">
+                <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
                   <img src={linkedin} alt="yt" className="card" />
                   <p className="card">200K followers</p>
                 </div>
@@ -148,8 +148,8 @@ const App = () => {
 
             {/* Quote Section */}
 
-            <div className="flex justify-center items-center mt-20" >
-              <img src={qoma} alt="qoma" className="mb-30 " />
+            <div className="flex justify-center items-center mt-20 group" >
+              <img src={qoma} alt="qoma" className="mb-30  transform transition-transform duration-300 ease-in-out group-hover:rotate-6" />
               <div className="flex flex-col justify-center items-center text-2xl font-bold font email-card rounded-xl w-250 p-8">
                 <div className="light flex gap-1 email-card">
                   <p className="blue-text email-card">Every developer</p>
@@ -163,7 +163,7 @@ const App = () => {
                   <p className="email-card">.</p>
                 </div>
               </div>
-              <img src={qoma} alt="qoma" style={{ transform: "rotate(180deg)" }} className="mt-30" />
+              <img src={qoma} alt="qoma" style={{ transform: "rotate(180deg)" }} className="mt-30 transform transition-transform duration-300 ease-in-out group-hover:rotate-6" />
             </div>
 
             {/* Premium Section */}

@@ -3,9 +3,9 @@ import React from 'react'
 const Button = ({ text, width, height }) => {
   return (
     <>
-      <button className={` border px-1 py-1 rounded-md font-medium  blue btn text-xs font
+      <button className={` border px-1 py-1 rounded-md font-medium blue btn text-xs font
      ${width ? width : "w-auto"} 
-     ${height ? height : "h-auto"}`}>{text}</button>
+     ${height ? height : "h-auto"} cursor-pointer`}>{text}</button>
     </>
   )
 }
