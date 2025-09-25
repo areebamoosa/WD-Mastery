@@ -3,11 +3,10 @@ import Button from "../Button/Button";
 import Github from "../../assets/github.svg";
 import Mail from "../../assets/mail.svg";
 
-
 const Path = () => {
   return (
     <>
-      <div className='text-white flex flex-col justify-center items-center mt-10   '>
+      <div className='text-white flex flex-col justify-center items-center mt-10 pt-24  '>
 
         <h1 className='text-2xl font font-semibold '>Let's Generate Your Personalized</h1>
         <h1 className='text-2xl font font-semibold '>Learning Path</h1>
@@ -31,13 +30,13 @@ const Path = () => {
       </div>
 
       <div className="text-white flex gap-10 justify-center items-center mt-10">
-        <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md">
-          <img src={Github} alt="git" className="w-5 h-5 card " />
-          <span className="card text-xs">Access with Github</span>
+        <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md cursor-pointer">
+          <img src={Github} alt="git" className="w-5 h-5 card  " />
+          <span className="card text-xs ">Access with Github</span>
         </button>
 
-        <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md">
-          <img src={Mail} alt="mail" className="w-5 h-5 card" />
+        <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md cursor-pointer">
+          <img src={Mail} alt="mail" className="w-5 h-5 card " />
           <span className="card text-xs">Contact with Mail</span>
         </button>
       </div>
