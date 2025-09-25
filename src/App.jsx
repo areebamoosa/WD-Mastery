@@ -36,7 +36,6 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-
         <Navbar />
         <Routes>
           <Route path="/" element={<>
@@ -45,7 +44,7 @@ const App = () => {
 
             {/* Main Hero Section Header */}
 
-            <div className="text-white black flex flex-col  items-center gap-3  font ">
+            <div className="text-white black flex flex-col  items-center gap-3  font pt-24 ">
               <div>
                 <h1 className="text-white text-4xl font-bold">Go From</h1>
               </div>
