@@ -11,11 +11,11 @@ const Credits = () => {
     <>
       <div className='text-white flex justify-evenly items-center text-sm mb-10 '>
 
-        <p className='ml-[-160px]'>©Copyright 2025 WD Mastery Pro</p>
+        <p className='ml-[-160px]'>©Copyright 2025 WD Mastery </p>
 
         <p >Designed with <i className="fa-regular fa-heart "></i> by A.M</p>
 
-        <div className='flex gap-4 cursor-pointer'>
+        <div className='flex gap-4 cursor-pointer mr-[-110px]'>
           <img src={Github} alt="insta" />
           <img src={Linkedin} alt="insta" />
           <img src={Twitter} alt="insta" />

@@ -8,8 +8,8 @@ const EmailCard = () => {
         <img src={email} alt="email" className="w-15 h-15 " />
         <p className=' text-sm font-semibold'>Level Up Your Dev Game: Weekly!</p>
         <p className=' text-xs'>Join 200,000+ developers getting free tips, tutorials & project ideas every week.</p>
-        <input type="text" placeholder='Enter your email' className='input  w-60 h-20 px-1 py-1 rounded-md text-xs mt-2' />
-        <button className='sub-btn text-black text-sm  px-1 py-1 rounded-md font-medium  w-60 h-20  font '>Subscribe</button>
+        <input type="text" placeholder='Enter your email' className='input  w-60 h-20 px-1 py-1 rounded-md text-xs mt-2 cursor-pointer' />
+        <button className='sub-btn text-black text-sm  px-1 py-1 rounded-md font-medium  w-60 h-20  font cursor-pointer'>Subscribe</button>
       </div>
     </>
   )

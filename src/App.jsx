@@ -170,7 +170,7 @@ const App = () => {
 
             {/* Premium Header */}
 
-            <div className="text-white mt-25">
+            <div className="text-white mt-20">
               <div className="text-4xl  flex gap-2 justify-center items-center ">
                 <h1 className="font font-bold ">Join the</h1>
                 <h1 className="font font-bold light-blue">Pro Circle</h1>
