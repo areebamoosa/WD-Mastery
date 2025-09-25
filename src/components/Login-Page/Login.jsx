@@ -6,7 +6,7 @@ import Mail from "../../assets/mail.svg";
 const Login = () => {
     return (
         <>
-            <div className='text-white flex flex-col justify-center items-center mt-10   '>
+            <div className='text-white flex flex-col justify-center items-center mt-10 pt-24  '>
                 <h1 className='text-2xl font font-semibold '>Log in to your account</h1>
                 <div className="flex flex-col items-start w-120 mt-15">
                     <label htmlFor="email" className="light font mt-5 text-xs text-left mb-2">Email address</label>
@@ -23,12 +23,12 @@ const Login = () => {
             </div>
 
             <div className="text-white flex gap-10 justify-center items-center mt-10">
-                <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md">
+                <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md cursor-pointer">
                     <img src={Github} alt="git" className="w-5 h-5 card " />
                     <span className="card text-xs">Access with Github</span>
                 </button>
 
-                <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md">
+                <button className="font card w-55 h-10 flex items-center justify-center gap-3 px-3 rounded-md cursor-pointer">
                     <img src={Mail} alt="mail" className="w-5 h-5 card" />
                     <span className="card text-xs">Contact with Mail</span>
                 </button>
