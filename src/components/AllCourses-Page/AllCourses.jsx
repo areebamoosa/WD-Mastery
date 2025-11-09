@@ -41,7 +41,7 @@ const AllCourses = () => {
             <h1 className="text-3xl text-white mt-20 text-center">Courses</h1>
 
 
-            <div className="flex justify-center items-center flex-col mt-10 ">
+            <div className="flex justify-center items-center flex-col mt-10 m-2 ">
                 <Courses />
             </div>
 
@@ -66,8 +66,12 @@ const AllCourses = () => {
 
             <hr className="blue-text mt-15" />
 
+            <div className='flex justify-center items-center'>
             <Footer />
-            <Credits />
+
+            </div>
+
+            {/* <Credits /> */}
 
 
 
