@@ -46,7 +46,7 @@ const AllCourses = () => {
             </div>
 
 
-            <div className=" sm:text-xl md:text-2xl lg:text-3xl font text-white font-semibold flex gap-1 justify-center items-center mt-25">
+            <div className=" text-base sm:text-xl md:text-2xl lg:text-3xl font text-white font-semibold flex gap-1 justify-center items-center mt-25">
                 <h3 className="gold">Wait... </h3>
                 <h3>But what if I want to learn</h3>
                 <h3 className="green">EVERYTHING</h3>
@@ -67,11 +67,10 @@ const AllCourses = () => {
             <hr className="blue-text mt-15" />
 
             <div className='flex justify-center items-center'>
-            <Footer />
-
+                <Footer />
             </div>
 
-            {/* <Credits /> */}
+            <Credits />
 
 
 

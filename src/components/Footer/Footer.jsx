@@ -8,7 +8,7 @@ const Footer = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-6 px-16  mt-20 sm:gap-18 m-10 gap-10">
 
-                <div className="sm:col-span-2 ">
+                <div className="flex justify-center sm:justify-start sm:col-span-2 ">
                     <EmailCard />
                 </div>
 
