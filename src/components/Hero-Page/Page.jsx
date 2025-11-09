@@ -78,27 +78,26 @@ const Page = () => {
             {/* Courses Header */}
 
             <div className="text-white flex flex-col items-center font gap-4 mt-30">
-                <h1 className="text-4xl font-bold">Stop Watching. Start Building.</h1>
-                <p className="light text-base">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Stop Watching. Start Building.</h1>
+                <p className="light text-xs sm:text-base">
                     Full stack courses focused on outcomes, not watch time.
                 </p>
             </div>
 
             {/* Courses Card Component */}
-
-            <div className="m-15">
+            <div className='flex justify-center items-center mt-10'>
                 <Courses />
             </div>
 
-            <div className="flex justify-center items-center">
 
-                <Button text="View All Courses" width="w-100" height="h-10" />
+            <div className="flex justify-center items-center mt-10">
+                <Button text="View All Courses" width=" w-60 sm:w-80 lg:w-100" height="h-10" />
             </div>
 
             {/* Reviews Section */}
 
             {/* Review Header */}
-            <div className="text-white  text-4xl font flex justify-center items-center gap-3 mt-20 ">
+            <div className="text-white sm:text-2xl lg:text-4xl font flex justify-center items-center gap-3 mt-20 ">
                 <h1 className="font-bold">What Devs Say About</h1>
                 <h1 className="font-bold light-blue">WD Mastery</h1>
             </div>
@@ -108,45 +107,63 @@ const Page = () => {
 
             {/* Popularity Section */}
 
-            <div className="text-white flex flex-col justify-center items-center font m-15 mt-[-45px]">
-                <h3 className="text-lg light">Developers love our content and we think you will, too.</h3>
-                <div className="flex justify-center items-center gap-3 mt-10 ">
-                    <div className=" card px-4 py-5 gap-2  rounded-md  transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                        <p className="card flex gap-2 justify-center items-center ">2,244 reviews on<i className="fa-solid fa-star card blue-text"></i>Trustpilot</p>
-                    </div>
-                    <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                        <img src={inst} alt="yt" className="card " />
-                        <p className="card">300K+ followers </p>
-                    </div>
-                    <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                        <img src={yt} alt="yt" className="card " />
-                        <p className="card">1.1M subscribers</p>
-                    </div>
-                    <div className="flex justify-center items-center  card px-15 py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                        <img src={linkedin} alt="yt" className="card" />
-                        <p className="card">200K followers</p>
+            <div className="text-white flex flex-col justify-center items-center font mt-15 sm:m-10 ">
+                <h3 className="text-sm sm:text-lg light ">Developers love our content and we think you will, too.</h3>
+
+                <div className="flex justify-center items-center gap-3 mt-10  ">
+
+                    <div className='grid grid-cols-1 sm:grid-cols-4 gap-10'>
+
+                        <div className=" card px-4 py-4 sm:px-12  sm:py-2 lg:px-15 lg:py-5 gap-2  rounded-md  transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                            <p className="card flex gap-2 justify-center items-center whitespace-nowrap ">2,244 reviews on<i className="fa-solid fa-star card blue-text"></i>Trustpilot</p>
+                        </div>
+
+
+                        <div className="flex justify-center items-center  card px-4 py-4 sm:px-8 sm:py-2 lg:px-15 lg:py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2 ">
+                            <img src={inst} alt="yt" className="card " />
+                            <p className="card">300K+ followers </p>
+                        </div>
+
+
+                        <div className="flex justify-center items-center  card px-4 py-4 sm:px-8 sm:py-2 lg:px-15 lg:py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                            <img src={yt} alt="yt" className="card " />
+                            <p className="card">1.1M subscribers</p>
+                        </div>
+
+                        <div className="flex justify-center items-center  card px-4 py-4 sm:px-8 sm:py-2 lg:px-15 lg:py-5 gap-2 rounded-md transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                            <img src={linkedin} alt="yt" className="card" />
+                            <p className="card">200K followers</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
             {/* Quote Section */}
 
-            <div className="flex justify-center items-center mt-20 group" >
-                <img src={qoma} alt="qoma" className="mb-30  transform transition-transform duration-300 ease-in-out group-hover:rotate-6" />
-                <div className="flex flex-col justify-center items-center text-2xl font-bold font email-card rounded-xl w-250 p-8">
-                    <div className="light flex gap-1 email-card">
+            <div className="flex justify-center items-center mt-20 group " >
+
+                <img src={qoma} alt="qoma" className="w-8 sm:w-12 lg:w-15 h-auto mb-30 transform transition-transform duration-300 ease-in-out group-hover:rotate-6" />
+
+                <div className="flex flex-col justify-center items-center whitespace-nowrap font-bold font email-card rounded-xl  w-100 sm:w-250 p-8">
+
+                    <div className="light flex gap-1 email-card text-xs sm:text-base lg:text-2xl">
                         <p className="blue-text email-card">Every developer</p>
                         <p className="email-card">hits</p>
                         <p className="gold email-card">roadblocks</p>
                         <p className="email-card">.The kind that makes you want to</p>
                     </div>
-                    <div className="light flex gap-1 email-card">
+
+                    <div className="light flex gap-1 email-card text-xs sm:text-base lg:text-2xl">
                         <p className="email-card">throw your laptop out the window. </p>
                         <p className="red email-card">You're not alone</p>
                         <p className="email-card">.</p>
                     </div>
+
                 </div>
-                <img src={qoma} alt="qoma" style={{ transform: "rotate(180deg)" }} className="mt-30 transform transition-transform duration-300 ease-in-out group-hover:rotate-6" />
+
+                <img src={qoma} alt="qoma" style={{ transform: "rotate(180deg)" }} className="w-8 sm:w-12 lg:w-15 h-auto mt-30 transform transition-transform duration-300 ease-in-out group-hover:rotate-6" />
+
             </div>
 
             {/* Premium Section */}
@@ -154,15 +171,15 @@ const Page = () => {
             {/* Premium Header */}
 
             <div className="text-white mt-20">
-                <div className="text-4xl  flex gap-2 justify-center items-center ">
+                <div className="text-base sm:text-2xl lg:text-4xl  flex gap-2 justify-center items-center ">
                     <h1 className="font font-bold ">Join the</h1>
                     <h1 className="font font-bold light-blue">Pro Circle</h1>
                     <h1 className="font font-medium ">-</h1>
-                    <h1 className="font font-medium text-3xl">
+                    <h1 className="font font-medium ">
                         for you or your organization
                     </h1>
                 </div>
-                <p className="flex justify-center items-center mt-4 text-sm">
+                <p className="flex justify-center items-center mt-4 text-xs sm:text-sm m-10">
                     Reach goals faster with one of our plans or programs. Try one free
                     today or contact sales to learn more
                 </p>
@@ -172,15 +189,15 @@ const Page = () => {
 
             <Premium />
 
-            <div className="flex justify-center items-center mt-[-100px]">
-                <Button text="Subscribe to WD Mastery" width="w-100" height="h-10" />
+            <div className="flex justify-center items-center mt-10">
+                <Button text="Subscribe to WD Mastery" width=" w-50 sm:w-60  lg:w-100" height="h-10" />
             </div>
 
             {/* FAQS Section */}
 
             {/* Faqs Heading */}
 
-            <div className="flex justify-center gap-20 items-center mt-20 ">
+            <div className="flex flex-col sm:flex-row justify-center gap-20 items-center  mt-100 sm:mt-20 sm:m-10">
 
                 <div className="flex flex-col gap-2 mt-[-270px]">
                     <h1 className="text-4xl text-white font-bold font ">Frequently</h1>

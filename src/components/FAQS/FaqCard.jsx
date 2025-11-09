@@ -6,11 +6,9 @@ const FaqCard = ({ id, question, answer, onClick }) => {
 
     return (
         <>
-            <div className={`text-white w-140  text-nowrap  card  cursor-pointer   ${faq ? "border-0" : " rounded-md"} mt-10 `} onClick={() => setFaq(!faq)} >
-
+            <div className={`text-white w-80 sm:w-100 lg:w-140    card  cursor-pointer   ${faq ? "border-0" : " rounded-md"} mt-10 `} onClick={() => setFaq(!faq)} >
                 <div className={`flex justify-between card p-4  font ${faq ? "border-0" : " rounded-md"}`}>
-
-                    <h4 className='blue-text card text-sm  font-medium '>{question}</h4>
+                    <h4 className='blue-text card text-sm  font-medium  '>{question}</h4>
                     <span className={`card  ${faq ? "rotate-180" : "rotate-0"}`} >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -22,15 +20,12 @@ const FaqCard = ({ id, question, answer, onClick }) => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </span>
-
                 </div>
 
-                <div className={`${faq ? "block" : "hidden"} w-140 h-5`}>
-                    <p className='light card font  cursor-pointer whitespace-normal break-words text-xs p-2 '>{answer}</p>
+                <div className={`${faq ? "block" : "hidden"} w-80 sm:w-100  lg:w-140 h-5`}>
+                    <p className='light card font  cursor-pointer  break-words text-xs p-2 '>{answer}</p>
                 </div>
-
             </div>
-
         </>
     )
 }

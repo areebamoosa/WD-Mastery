@@ -12,7 +12,7 @@ const faqs = [
 const Faq = () => {
   return (
     <>
-      <div className='flex flex-col  '>
+      <div className='flex flex-col gap-4 '>
         {faqs.map((faq) => (
           <FaqCard key={faq.id}{...faq} />
         ))}
