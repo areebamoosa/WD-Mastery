@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Customised Font Styles*/
 
 .font {
@@ -65,8 +69,6 @@ body {
 .red{
   color: #ff586f;
 }
-
-
 
 
 /* Customised Border styles */

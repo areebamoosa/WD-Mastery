@@ -19,11 +19,15 @@ const courses = [
 const Courses = () => {
   return (
     <>
-      <div className='grid grid-cols-3 gap-6 m-10 '>
+<div className="max-w-screen-xl mx-auto px-4">
+
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10 gap-6  '>
         {courses.map(course => (
           <Card key={course.id} {...course} />
         ))}
       </div>
+      </div>
+
     </>
   )
 }

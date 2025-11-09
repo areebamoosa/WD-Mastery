@@ -14,8 +14,10 @@ import threejs from '../../assets/three-js.svg'
 const AllCourses = () => {
     return (
         <>
-            <div className="flex flex-col justify-center items-center mt-20 pt-24">
-                <div className="text-white text-5xl font font-bold  ">
+
+
+            <div className="flex flex-col justify-center items-center mt-40 text-center">
+                <div className="text-white font font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
                     <h1>Courses That Take You</h1>
                     <div className="flex gap-3">
                         <h1>From</h1>
@@ -24,22 +26,23 @@ const AllCourses = () => {
                         <h1 className="green">Doing</h1>
                     </div>
                 </div>
-                <p className="light mt-5 text-lg">Learn the skills. Build the portfolio. Get the job.</p>
+                <p className="light mt-5 text-sm sm:text-base md:text-lg ">Learn the skills. Build the portfolio. Get the job.</p>
             </div>
 
-            <div className="flex justify-center items-center mt-8 gap-6">
-                <img src={js} alt="js" className="w-12 h-12 object-contain " />
-                <img src={next} alt="next" className="w-12 h-12 object-contain" />
-                <img src={react} alt="react" className="w-12 h-12 object-contain" />
-                <img src={tailwind} alt="tailwind" className="w-12 h-12 object-contain" />
-                <img src={threejs} alt="threejs" className="w-12 h-12 object-contain" />
-                <img src={native} alt="native" className="w-12 h-12 object-contain" />
+            <div className="flex justify-center items-center mt-8 gap-4 sm:gap-6 ">
+                <img src={js} alt="js" className="w-10 h-10 sm:w-12 sm:h-12  object-contain " />
+                <img src={next} alt="next" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+                <img src={react} alt="react" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+                <img src={tailwind} alt="tailwind" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+                <img src={threejs} alt="threejs" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+                <img src={native} alt="native" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
             </div>
 
+            {/* <h1 className="text-3xl text-white ml-45 mt-20 ">Courses</h1> */}
+            <h1 className="text-3xl text-white mt-20 text-center">Courses</h1>
 
-            <div className="m-15">
 
-                <h1 className="text-2xl text-white ml-15 mt-20 ">Courses</h1>
+            <div className="flex justify-center items-center flex-col mt-10 ">
                 <Courses />
             </div>
 
@@ -66,6 +69,9 @@ const AllCourses = () => {
 
             <Footer />
             <Credits />
+
+
+
         </>
     )
 }
