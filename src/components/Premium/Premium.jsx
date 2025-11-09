@@ -10,10 +10,12 @@ const premium = [
 const Premium = () => {
   return (
     <>
-      <div className='grid grid-cols-3 gap-20 m-40 mt-[50px]  '>
-        {premium.map(premium => (
-          <PremiumCard key={premium.id} {...premium} />
-        ))}
+      <div className="flex justify-center items-center">
+        <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 sm:gap-6 lg:gap-6 mt-10 md:gap-6 gap-10'>
+          {premium.map(premium => (
+            <PremiumCard key={premium.id} {...premium} />
+          ))}
+        </div>
       </div>
     </>
   )

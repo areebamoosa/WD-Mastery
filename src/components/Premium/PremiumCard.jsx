@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from '../Button/Button'
 
-const PremiumCard = ({ plan, people, members, pricing, img }) => {
+const PremiumCard = ({ plan, people, members, pricing }) => {
   return (
     <>
-      <div className='text-white card font w-85 h-80  p-4 flex flex-col gap-10 rounded-lg transition-shadow duration-300 hover:shadow-[0_4px_15px_#33a7ff]'>
+      <div className='text-white card font w-85 h-80 md:w-65 lg:w-85 lg:h-80 p-4 flex flex-col gap-10 rounded-lg transition-shadow duration-300 hover:shadow-[0_4px_15px_#33a7ff]'>
 
         <div className='flex flex-col gap-2 card'>
 

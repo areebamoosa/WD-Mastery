@@ -38,7 +38,6 @@ const AllCourses = () => {
                 <img src={native} alt="native" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
             </div>
 
-            {/* <h1 className="text-3xl text-white ml-45 mt-20 ">Courses</h1> */}
             <h1 className="text-3xl text-white mt-20 text-center">Courses</h1>
 
 
@@ -47,21 +46,21 @@ const AllCourses = () => {
             </div>
 
 
-            <div className="text-3xl font text-white font-semibold flex gap-1 justify-center items-center mt-25">
+            <div className=" sm:text-xl md:text-2xl lg:text-3xl font text-white font-semibold flex gap-1 justify-center items-center mt-25">
                 <h3 className="gold">Wait... </h3>
                 <h3>But what if I want to learn</h3>
                 <h3 className="green">EVERYTHING</h3>
                 <h3>?</h3>
             </div>
 
-            <div className="text-4xl text-white font font-semibold flex gap-2 justify-center items-center mt-15">
+            <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl text-white font font-semibold flex gap-2 justify-center items-center mt-15">
                 <h1>Become a </h1>
                 <h1 className="blue-text">Member</h1>
             </div>
 
             <Premium />
 
-            <div className="flex gap-6 flex-col justify-center items-center mt-[-40px]">
+            <div className="flex  flex-col justify-center items-center mt-10">
                 <Button text="Become a Member" width="w-70" height="h-10" />
             </div>
 
