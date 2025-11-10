@@ -21,7 +21,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="heroimage"
-          className=" max-w-[180px]  md:w-[240px] lg:max-w-[490px] w-full h-auto object-contain transition-all duration-300 ease-in-out group-hover:scale-90"
+          className="max-w-[180px] sm:max-w-[240px] md:max-w-[590px] w-full h-auto object-contain transition-all duration-300 ease-in-out group-hover:scale-90"
         />
       </div>
 
