@@ -28,14 +28,14 @@ const Page = () => {
 
             <div className="text-white black flex flex-col  items-center gap-3  font pt-24 ">
                 <div>
-                    <h1 className="text-white text-4xl font-bold">Go From</h1>
+                    <h1 className="text-white  text-2xl sm:text-3xl lg:text-4xl font-bold">Go From</h1>
                 </div>
-                <div className="flex justify-center content-center gap-2 text-3xl font-bold">
+                <div className="flex justify-center content-center gap-2 text-xl  md:text-2xl lg:text-3xl font-bold">
                     <h1 className="orange font-bold ">I Know This </h1>
                     <h1 className="font-bold">to</h1>
                     <h1 className="green font-bold">I Built This</h1>
                 </div>
-                <div className="text-base light">
+                <div className="text-xs sm:text-base light">
                     <p>
                         Stop consuming. Start creating. Build real projects that get you
                         hired.
