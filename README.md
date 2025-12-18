@@ -15,7 +15,7 @@ The website is developed using **React** and **Tailwind CSS**, with emphasis on 
 
 ## How it looks 👀
 
-![Screenshot](/Src/assets/demo.png)
+![Demo](src/assets/demo.png)
 
 ## 🌐 Live Demo
 
