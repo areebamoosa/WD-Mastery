@@ -19,7 +19,7 @@ The website is developed using **React** and **Tailwind CSS**, with emphasis on 
 
 ## 🌐 Live Demo
 
-**View Live Website:** https://wd-mastery.netlify.app
+**View Live Website:** https://wd-mastery.web.app
 
 ## Note
 
