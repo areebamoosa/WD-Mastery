@@ -23,4 +23,4 @@ The website is developed using **React** and **Tailwind CSS**, with emphasis on 
 
 ## Note
 
-- This website is fully responsive and works smoothly across all screen sizes.
+This website is fully responsive and works smoothly across all screen sizes.
